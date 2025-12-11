@@ -1,0 +1,1 @@
+This repository includes configuration files and package lists for a Void Linux installation.
