@@ -1,1 +1,1 @@
-This repository includes configuration files and package lists for a Void Linux installation.
+This repository includes configuration files and package lists for a Void Linux installation. Set for use with the Orchis shell (https://github.com/vinceliuice/Orchis-theme) and Tela icon (https://github.com/vinceliuice/Tela-icon-theme) themes.
