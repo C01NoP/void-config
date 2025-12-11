@@ -1,0 +1,46 @@
+
+@import 'colors.css';
+/* Make background transparent */
+#panel {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove borders around the dock */
+#dock {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Style icons: size and spacing */
+#dock .icon {
+    padding: 0 4px !important; /* Adjust spacing */
+    font-size: 24px !important; /* Adjust icon size */
+}
+
+/* Hide labels (if any) */
+#dock .label {
+    display: none !important;
+}
+
+/* Adjust transparency */
+#dock {
+    opacity: 1.0; /* or less for semi-transparent */
+}
+ .xfce4-panel#XfcePanelWindow {
+
+border-radius: 10px;
+
+/* Round corners with gradient background for Panel 2 */
+#panel-1 {
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Round corners for individual panel buttons */
+#panel-1 .xfce4-panel-button {
+    border-radius: 10px;
+}
+
