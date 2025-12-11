@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Path to store the state
+STATE_FILE=~/.brightness_state
+
+# Check if the state file exists and read it
+if [ -f "$STATE_FILE" ]; then
+    state=$(cat "$STATE_FILE")
+else
+    state=0  # Default to brightdown if no state file
+fi
+
+if [ "$state" -eq 0 ]; then
+    # Set to brightup
+    xrandr --output DVI-I-1 --brightness 1
+    redshift -O 6500K
+    echo 1 > "$STATE_FILE"  # Save the state
+else
+    # Set to brightdown
+    xrandr --output DVI-I-1 --brightness 0.5
+    redshift -O 3600K
+    echo 0 > "$STATE_FILE"  # Save the state
+fi
