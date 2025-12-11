@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=brightness control
+Comment=
+Exec=/home/mike/brightctl
+Icon=lighttable
+Path=
+Terminal=false
+StartupNotify=false

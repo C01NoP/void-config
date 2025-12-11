@@ -1,0 +1,12 @@
+app=firefox
+custom_action_command=none
+last_user=
+last_extension=png
+show_in_folder=false
+screenshot_dir=file:/home/mike/Pictures
+action=1
+delay=3
+region=1
+show_mouse=0
+show_border=1
+

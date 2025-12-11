@@ -1,0 +1,11 @@
+[user]
+pinned=firefox;kitty;thunar;
+indicatorColor=rgb(51,209,122)
+inactiveColor=rgb(224,27,36)
+inactiveIndicatorStyle=1
+forceIconSize=true
+iconSize=48
+keyComboActive=true
+showPreviews=true
+showWindowCount=false
+keyAloneActive=false
