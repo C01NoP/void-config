@@ -1,9 +1,13 @@
 if status is-interactive
-alias up="sudo xbps-install -Suv ; xarm ; flatpak update ; multipull ; cd ~"
+alias up="sudo xbps-install -Suv ; xarm; flatpak update ; multipull ; cd ~"
+alias xi="sudo xbps-install"
+alias xq="xbps-query -Rs"
+alias xrm="sudo xbps-remove"
 alias xarm="sudo xbps-remove -R -O"
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias arm="sudo xbps-remove -yo"
+alias xorph="sudo xbps-remove -Oo"
 alias multipull="cd ~/Git; find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
-alias hc="history clear"
 alias fru="flatpak remove --unused"
 alias hc="history clear"
 alias manpkg="xbps-query -l -m | batcat -p"
@@ -21,7 +25,4 @@ alias timefix="sudo hwclock --systohc"
 alias lsf="export SDL_FORCE_SOUNDFONTS=1"
 alias asf="export SDL_SOUNDFONTS=/home/mike/wads/SC-55.sf2"
 alias reboot="sudo reboot"
-function xbps-install
-    command xbps-install $argv | sed 's/\([a-zA-Z0-9\-]\+\)/\x1b[32m\1\x1b[0m/g'
-end
 end
