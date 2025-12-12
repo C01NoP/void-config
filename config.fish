@@ -1,5 +1,5 @@
 if status is-interactive
-alias up="sudo xbps-install -Suv ; flatpak update ; multipull ; cd ~"
+alias up="sudo xbps-install -Suv ; xarm ; flatpak update ; multipull ; cd ~"
 alias xarm="sudo xbps-remove -R -O"
 alias arm="sudo xbps-remove -yo"
 alias multipull="cd ~/Git; find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
