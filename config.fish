@@ -1,10 +1,6 @@
 if status is-interactive
 alias up="sudo xbps-install -Suv ; flatpak update ; multipull ; cd ~"
-alias xi="sudo xbps-install"
-alias xq="xbps-query -Rs"
-alias xrm="sudo xbps-remove"
 alias xarm="sudo xbps-remove -R -O"
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias arm="sudo xbps-remove -yo"
 alias xorph="sudo xbps-remove -Oo"
 alias multipull="cd ~/Git; find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
