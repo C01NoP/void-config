@@ -1,5 +1,5 @@
 if status is-interactive
-alias up="sudo xbps-install -Suv ; xarm; flatpak update ; multipull ; cd ~"
+alias up="sudo xbps-install -Suv ; flatpak update ; multipull ; cd ~"
 alias xi="sudo xbps-install"
 alias xq="xbps-query -Rs"
 alias xrm="sudo xbps-remove"
