@@ -3,11 +3,11 @@
 # Path to store the state
 STATE_FILE=~/.brightness_state
 
-# Check if the state file exists and read it
-if [ -f "$STATE_FILE" ]; then
-    state=$(cat "$STATE_FILE")
+# Check if the state file exists and read it, or set to 1 if missing/empty
+if [ ! -f "$STATE_FILE" ] || [ ! -s "$STATE_FILE" ]; then
+    state=1  # Default to brightup if the state file is missing or empty
 else
-    state=1  # Default to brightup if no state file
+    state=$(cat "$STATE_FILE")
 fi
 
 if [ "$state" -eq 0 ]; then
