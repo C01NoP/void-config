@@ -7,7 +7,7 @@ STATE_FILE=~/.brightness_state
 if [ -f "$STATE_FILE" ]; then
     state=$(cat "$STATE_FILE")
 else
-    state=0  # Default to brightdown if no state file
+    state=1  # Default to brightup if no state file
 fi
 
 if [ "$state" -eq 0 ]; then
