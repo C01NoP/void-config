@@ -1,0 +1,27 @@
+[
+    {
+        "enabled": true,
+        "id": "4ca9c0abea921854551f34094d902b1c",
+        "metadata": {
+            "fullname": "xrandr-Ancor Communications Inc-VS248-EBLMQS057710",
+            "name": "DVI-I-1"
+        },
+        "mode": {
+            "refresh": 60,
+            "size": {
+                "height": 1080,
+                "width": 1920
+            }
+        },
+        "overscan": 0,
+        "pos": {
+            "x": 0,
+            "y": 0
+        },
+        "priority": 1,
+        "rgbrange": 0,
+        "rotation": 1,
+        "scale": 1,
+        "vrrpolicy": 2
+    }
+]
