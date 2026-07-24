@@ -5,6 +5,10 @@ alias xq="xbps-query -Rs"
 alias xrm="sudo xbps-remove"
 alias xarm="sudo xbps-remove -R -O"
 alias arm="sudo xbps-remove -yo"
+alias xclr="arm ; xarm ; fru"
+function cleantn; rm -rf ~/.cache/thumbnails/normal/*; end
+function cleanr; rm ~/.local/share/recently-used.xbel; end
+alias pkgcache="ls /var/cache/xbps/*.xbps"
 alias multipull="cd ~/Git; find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
 alias fru="flatpak remove --unused"
 alias hc="history clear"
