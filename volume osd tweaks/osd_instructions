@@ -1,0 +1,18 @@
+restore green osd:
+cp ~/.local/share/plasma/desktoptheme/Orchis-dark/widgets/bar_meter_horizontal-green.svgz \
+   ~/.local/share/plasma/desktoptheme/Orchis-dark/widgets/bar_meter_horizontal.svgz
+
+restore entire theme:
+cd ~/.local/share/plasma/desktoptheme
+tar -xzf ~/Orchis-dark-green-backup.tar.gz
+
+theme path:
+~/home/mike/.local/share/plasma/desktoptheme/Orchis-dark/
+
+specific green line:
+~/home/mike/.local/share/plasma/desktoptheme/Orchis-dark/widgets/bar_meter_horizontal.svgz
+
+to edit:
+gzip -cd bar_meter_horizontal.svgz > bar_meter_horizontal.svg
+mousepad bar_meter_horizontal.svg
+gzip -c bar_meter_horizontal.svg > bar_meter_horizontal.svgz
